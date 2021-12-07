@@ -20,7 +20,7 @@ This will create a docker image named test_web with the Dockerfile included with
 Instanciate the image in a docker container using:
 `docker run -it -v $(pwd):/usr/src/app -p 5000:5000 --name web test_web`
 
-It will run a docker container in interactive mode (input/output) with a mounted volume from the current folder $(pwd) to the file /usr/src/app in the docker container. We define the port 5000 for both the host machine and the docker container. The --name makes that the container's name isn't randommly generated and saves time not looking for the container id (docker ps). We instanciate the image we just created beforehand.
+It will run a docker container in interactive mode (input/output) with a mounted volume from the current folder $(pwd) to the file /usr/src/app in the docker container. We define the port 5000 for both the host machine and the docker container. The --name makes that the container's name isn't randomly generated and saves time not looking for the container id (docker ps). We instanciate the image we just created beforehand.
 
 ### Making sure the mount worked <a name="mount"></a>
   #### Docker inspect<a name="inspect"></a>
