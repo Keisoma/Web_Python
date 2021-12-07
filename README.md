@@ -29,6 +29,6 @@ with `docker inspect web` we are going to make sure that the Mount worked. By sc
   #### Docker exec <a name="exec"></a>
 with `docker exec -it web sh` (sh since we are using an alpine image in the Dockerfile), we can enter the container. By entering the /usr/src/app/ folder, we can see the folder we mounted and if we change something in our source folder, it will also be changed in this folder inside the docker container.
 
-## Test<a name="test"></a>
+## Testing<a name="test"></a>
 Now we just need to go on the address `http://172.17.0.2:5000/` on any web browser, and we can see our (not-so) beautiful Hello World page !
 
